@@ -1,0 +1,42 @@
+body, html {
+    /* As linhas anteriores permanecem as mesmas */
+    background-image: url('../background/fundo.png'); /* Caminho da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    /* As linhas posteriores permanecem as mesmas */
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 80%; /* ou a largura desejada */
+    max-width: 800px; /* ou o máximo desejado */
+    height: auto; /* ou a altura desejada */
+}
+
+video {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+/* As linhas anteriores permanecem as mesmas */
+
+.redirect-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #3ebb8b;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* As linhas posteriores permanecem as mesmas */

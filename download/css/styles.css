@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.download-btn {
+    position: relative; /* Para permitir posicionamento absoluto dos pseudoelementos */
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Para esconder parte da borda que ultrapassa o botão */
+}
+
+.download-btn:hover {
+    background-color: #3700b3;
+    transform: scale(1.1);
+}
+
+.download-btn:active {
+    transform: scale(0.9);
+}
+
+/* Animação RGB */
+.download-btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, red, yellow, lime, cyan, blue, magenta, red);
+    background-size: 400% 400%;
+    border-radius: 50%;
+    z-index: -1; /* Para colocar atrás do botão */
+    animation: animate 6s linear infinite;
+    transition: width 0.3s, height 0.3s;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+body, html {
+    /* As linhas anteriores permanecem as mesmas */
+    background-image: url('./background/fundo.jpeg'); /* Caminho da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    /* As linhas posteriores permanecem as mesmas */
+}
+/* As linhas anteriores permanecem as mesmas */
+
+.redirect-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #6a568a;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* As linhas posteriores permanecem as mesmas */

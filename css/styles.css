@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Define uma cor preta com 80% de opacidade */
+    padding: 5px 0; /* Ajusta o preenchimento vertical e horizontal do cabeçalho */
+    text-align: center;
+    margin-bottom: 20px; /* Ajusta a margem inferior do cabeçalho */
+    color: white;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 7px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+section {
+    padding: 50px;
+    text-align: center;
+}
+#highlight {
+    background: url('highlight.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.gallery-container img {
+    width: 45%;
+    border-radius: 10px;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 5px;
+}
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+/* Estilo para o texto com letras brancas e realce em preto */
+.text-highlight {
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+/* Estilos para o botão Explore */
+#highlight button {
+    background-color: #eb6a00; /* Cor de fundo do botão */
+    color: rgb(255, 255, 255); /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 15px 30px; /* Adiciona preenchimento interno ao botão */
+    font-size: 18px; /* Tamanho da fonte */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave ao passar o mouse */
+}
+
+#highlight button:hover {
+    background-color: #ffffff; /* Cor de fundo alterada ao passar o mouse */
+    color: #eb6a00;
+    transform: scale(1.1); /* Efeito de escala ao passar o mouse */
+}
+
+#highlight button:active {
+    transform: scale(0.9); /* Efeito de escala ao clicar no botão */
+}
